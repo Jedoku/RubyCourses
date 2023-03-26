@@ -2,13 +2,13 @@
 
 # Description/Explanation of Chat class
 class Message
-  attr_reader :text, :member, :chat, :attachments
+  attr_reader :text, :member, :chat, :attachment
 
-  def initialize(text, member, chat, attachments)
+  def initialize(text, member, chat, attachment)
     @text = text
     @member = member
     @chat = chat
-    @attachments = attachments[]
+    @attachment = attachment
   end
 
   def sticker; end

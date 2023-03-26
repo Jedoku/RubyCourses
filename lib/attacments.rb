@@ -4,18 +4,14 @@
 class Message
   # Class
   class Attachments
-    attr_accessor :message, :attaches
+    attr_accessor :message
 
-    def attachments
-      @attachments = []
-    end
-
-    def init(message)
+    def initialize(message)
       @message = message
     end
 
     def attach
-      message.attachments.push(self)
+      message.attachment = self
     end
 
     def choose
