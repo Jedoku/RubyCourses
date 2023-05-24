@@ -11,7 +11,7 @@ class Message
     end
 
     def attach
-      message.attachment = self
+      message.attachments << self
     end
 
     def choose
